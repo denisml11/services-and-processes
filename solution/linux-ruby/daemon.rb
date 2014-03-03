@@ -7,6 +7,7 @@ include Daemonize
 
 puts 'About to daemonize.'
 daemonize                    
+
 log = Tempfile.new('daemon.log')
 	loop do
 		log.puts "I'm a daemon, doin' daemon things."
